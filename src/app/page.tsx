@@ -54,7 +54,7 @@ export default function Page() {
       {/* Hero Section */}
       <section id="home" className="hero">
         <div className="hero-content fade-in">
-          <h1>Paolo's Portfolio</h1>
+        <h1>{"Paolo's Portfolio"}</h1>
           <p>
             Crafting digital experiences with elegance and precision.
             Transforming ideas into impactful solutions through innovative
