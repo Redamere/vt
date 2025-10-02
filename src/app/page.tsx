@@ -45,10 +45,10 @@ export default function Page() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
-          <div className="logo">{"Paolo"}</div>
+          <div className="logo">{"Sean Paolo Banza"}</div>
           <div className="nav-links">
             <a href="#home">{"Home"}</a>
-            <a href="#projects">{"Projects"}</a>
+            <a href="#experience">{"Experience"}</a>
             <a href="#about">{"About"}</a>
             <a href="#contact">{"Contact"}</a>
           </div>
@@ -58,67 +58,72 @@ export default function Page() {
       {/* Hero Section */}
       <section id="home" className="hero">
         <div className="hero-content fade-in">
-          <h1>{"Paolo's Portfolio"}</h1>
+          <h1>{"Sean Paolo Banza"}</h1>
           <p>
-            {"Crafting digital experiences with elegance and precision. Transforming ideas into impactful solutions through innovative technology and thoughtful design."}
+            {"Software Engineer and Co-Founder specializing in full-stack development, cloud solutions, and AI/ML. Building scalable applications and transforming ideas into impactful digital experiences."}
           </p>
-          <a href="#projects" className="cta-button">{"View My Work"}</a>
+          <a href="#experience" className="cta-button">{"View My Work"}</a>
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="section">
+      {/* Experience Section */}
+      <section id="experience" className="section">
         <div className="container">
-          <h2 className="section-title fade-in">{"Featured Projects"}</h2>
+          <h2 className="section-title fade-in">{"Experience"}</h2>
           <div className="project-grid">
             <div className="project-card fade-in">
-              <h3>{"AI-Powered Analytics Platform"}</h3>
+              <h3>{"Co-Founder and Engineer"}</h3>
+              <p className="company-info">{"YW2 LLC • August 2025 - Present"}</p>
               <p>
-                {"A comprehensive analytics platform leveraging machine learning algorithms to provide real-time insights and predictive analytics for enterprise clients."}
+                {"Oversee end-to-end technical development for projects, from requirements gathering and prototyping to deployment. Research and advise on IT infrastructure overhauls, design websites for small businesses, and direct technical strategy aligning with business goals."}
+              </p>
+              <div className="project-tech">
+                <span className="tech-tag">{"AWS"}</span>
+                <span className="tech-tag">{"WordPress"}</span>
+                <span className="tech-tag">{"Firebase"}</span>
+                <span className="tech-tag">{"Cybersecurity"}</span>
+              </div>
+            </div>
+
+            <div className="project-card fade-in">
+              <h3>{"Software Engineer Intern"}</h3>
+              <p className="company-info">{"Modo Labs Inc. • June 2024 – July 2024, June 2025 – August 2025"}</p>
+              <p>
+                {"Developed cloud-based applications using AWS services including Lambda, DynamoDB, and S3. Designed mobile app modules with searchable building directories and athletics features. Spearheaded intern team in prototyping a multi-persona AI knowledge agent."}
+              </p>
+              <div className="project-tech">
+                <span className="tech-tag">{"AWS Lambda"}</span>
+                <span className="tech-tag">{"DynamoDB"}</span>
+                <span className="tech-tag">{"S3"}</span>
+                <span className="tech-tag">{"AI/ML"}</span>
+              </div>
+            </div>
+
+            <div className="project-card fade-in">
+              <h3>{"Web and Software Developer"}</h3>
+              <p className="company-info">{"University of Houston IT • May 2024 – June 2025"}</p>
+              <p>
+                {"Engineered mobile applications for over 100,000 university users. Implemented RESTful APIs with PHP, cURL and SQL to create dynamic application modules. Developed and maintained web content for 20+ departments ensuring industry compliance."}
+              </p>
+              <div className="project-tech">
+                <span className="tech-tag">{"PHP"}</span>
+                <span className="tech-tag">{"RESTful APIs"}</span>
+                <span className="tech-tag">{"SQL"}</span>
+                <span className="tech-tag">{"Mobile Dev"}</span>
+              </div>
+            </div>
+
+            <div className="project-card fade-in">
+              <h3>{"Coding Instructor"}</h3>
+              <p className="company-info">{"iCode Inc. • August 2025 – Present"}</p>
+              <p>
+                {"Teaching programming fundamentals and problem-solving to students aged 6-12 using Python, JavaScript, and Scratch. Introducing robotics and drone programming, and cultivating an inclusive learning environment that builds confidence in technology."}
               </p>
               <div className="project-tech">
                 <span className="tech-tag">{"Python"}</span>
-                <span className="tech-tag">{"TensorFlow"}</span>
-                <span className="tech-tag">{"React"}</span>
-                <span className="tech-tag">{"Node.js"}</span>
-              </div>
-              <div className="project-links">
-                <a href="#">{"Live Demo"}</a>
-                <a href="#">{"GitHub"}</a>
-              </div>
-            </div>
-
-            <div className="project-card fade-in">
-              <h3>{"Blockchain Financial System"}</h3>
-              <p>
-                {"Secure decentralized financial application with smart contract integration, featuring advanced cryptographic security and seamless user experience."}
-              </p>
-              <div className="project-tech">
-                <span className="tech-tag">{"Solidity"}</span>
-                <span className="tech-tag">{"Web3.js"}</span>
-                <span className="tech-tag">{"Next.js"}</span>
-                <span className="tech-tag">{"Ethereum"}</span>
-              </div>
-              <div className="project-links">
-                <a href="#">{"Live Demo"}</a>
-                <a href="#">{"GitHub"}</a>
-              </div>
-            </div>
-
-            <div className="project-card fade-in">
-              <h3>{"Neural Network Visualization Tool"}</h3>
-              <p>
-                {"Interactive web application for visualizing and understanding deep learning model architectures with real-time training visualization capabilities."}
-              </p>
-              <div className="project-tech">
-                <span className="tech-tag">{"D3.js"}</span>
-                <span className="tech-tag">{"PyTorch"}</span>
-                <span className="tech-tag">{"Flask"}</span>
-                <span className="tech-tag">{"WebGL"}</span>
-              </div>
-              <div className="project-links">
-                <a href="#">{"Live Demo"}</a>
-                <a href="#">{"GitHub"}</a>
+                <span className="tech-tag">{"JavaScript"}</span>
+                <span className="tech-tag">{"Robotics"}</span>
+                <span className="tech-tag">{"Education"}</span>
               </div>
             </div>
           </div>
@@ -133,32 +138,43 @@ export default function Page() {
             <div className="about-image">
               <div className="skills-grid">
                 <div className="skill-item">
-                  <h4>{"Frontend"}</h4>
-                  <p>{"React, Next.js, Vue"}</p>
+                  <h4>{"Languages"}</h4>
+                  <p>{"Java, Python, C/C++, JavaScript, PHP, Ruby"}</p>
                 </div>
                 <div className="skill-item">
-                  <h4>{"Backend"}</h4>
-                  <p>{"Node.js, Python, Java"}</p>
+                  <h4>{"Frameworks"}</h4>
+                  <p>{"MERN, LAMP, Ruby On Rails, ASP.net"}</p>
                 </div>
                 <div className="skill-item">
-                  <h4>{"AI/ML"}</h4>
-                  <p>{"TensorFlow, PyTorch"}</p>
+                  <h4>{"Cloud & Tools"}</h4>
+                  <p>{"AWS, Azure, Docker, Git"}</p>
                 </div>
                 <div className="skill-item">
-                  <h4>{"Database"}</h4>
-                  <p>{"MongoDB, PostgreSQL"}</p>
+                  <h4>{"Databases"}</h4>
+                  <p>{"PostgreSQL, MongoDB, DynamoDB"}</p>
+                </div>
+                <div className="skill-item">
+                  <h4>{"AI/ML Libraries"}</h4>
+                  <p>{"TensorFlow, PyTorch, Keras"}</p>
+                </div>
+                <div className="skill-item">
+                  <h4>{"Data Science"}</h4>
+                  <p>{"Pandas, NumPy, Matplotlib, Rasterio"}</p>
                 </div>
               </div>
             </div>
             <div className="about-text">
               <p>
-                {"I am a passionate Software Engineer and Deep Learning Enthusiast with over 5 years of experience in creating innovative digital solutions. My expertise spans across full-stack development, artificial intelligence, and blockchain technology."}
+                {"I'm a Software Engineer and Co-Founder with a passion for building scalable applications and innovative solutions. I graduated from the University of Houston with a Bachelor of Science in Computer Science in May 2025."}
               </p>
               <p>
-                {"I believe in the power of technology to solve complex problems and create meaningful impact. Whether it’s building scalable web applications, implementing machine learning models, or designing user-centric interfaces, I approach every project with dedication to excellence and attention to detail."}
+                {"My experience spans full-stack development, cloud architecture, and AI/ML implementations. I've worked on applications serving over 100,000 users, developed cloud-based solutions using AWS services, and led teams in prototyping intelligent systems."}
               </p>
               <p>
-                {"When I’m not coding, you can find me exploring the latest developments in AI research, contributing to open-source projects, or sharing knowledge through technical writing and mentoring."}
+                {"As a co-founder of YW2 LLC, I oversee technical strategy and development, helping clients modernize their infrastructure and build their digital presence. I'm also passionate about education, teaching the next generation of programmers through hands-on robotics and coding instruction."}
+              </p>
+              <p>
+                {"I believe in creating technology that makes a real impact—whether it's improving efficiency for businesses, enhancing user experiences, or inspiring young minds to explore the world of programming."}
               </p>
             </div>
           </div>
@@ -171,20 +187,24 @@ export default function Page() {
           <h2 className="section-title fade-in">{"Get In Touch"}</h2>
           <div className="contact-content fade-in">
             <p>
-              {"I’m always interested in new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out!"}
+              {"I'm always interested in new opportunities, collaborations, and conversations about technology. Whether you have a project in mind or just want to connect, feel free to reach out!"}
             </p>
             <div className="contact-info">
               <div className="contact-item">
                 <h4>{"Email"}</h4>
-                <a href="mailto:paolo@example.com">{"paolo@example.com"}</a>
+                <a href="mailto:seanpaolobanza@gmail.com">{"seanpaolobanza@gmail.com"}</a>
               </div>
               <div className="contact-item">
                 <h4>{"LinkedIn"}</h4>
-                <a href="https://linkedin.com/in/paolo" target="_blank">{"linkedin.com/in/paolo"}</a>
+                <a href="https://linkedin.com/in/sean-paolo-banza" target="_blank">{"linkedin.com/in/sean-paolo-banza"}</a>
               </div>
               <div className="contact-item">
                 <h4>{"GitHub"}</h4>
-                <a href="https://github.com/paolo" target="_blank">{"github.com/paolo"}</a>
+                <a href="https://github.com/Redamere" target="_blank">{"github.com/Redamere"}</a>
+              </div>
+              <div className="contact-item">
+                <h4>{"Phone"}</h4>
+                <a href="tel:832-670-2148">{"832-670-2148"}</a>
               </div>
             </div>
           </div>
@@ -194,7 +214,7 @@ export default function Page() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>{"© 2025 Paolo. All Rights Reserved."}</p>
+          <p>{"© 2025 Sean Paolo Banza. All Rights Reserved."}</p>
         </div>
       </footer>
     </>

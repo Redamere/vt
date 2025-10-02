@@ -1,10 +1,8 @@
 import '../styles.css';
-
 export const metadata = {
-  title: "Paolo's Portfolio",
-  description: "Professional portfolio of Paolo",
+  title: "Sean Paolo Banza - Portfolio",
+  description: "Software Engineer specializing in full-stack development, cloud solutions, and AI/ML",
 };
-
 export default function RootLayout({
   children,
 }: {
@@ -12,11 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
+      <head />
       <body>{children}</body>
     </html>
   );

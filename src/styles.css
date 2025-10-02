@@ -40,7 +40,7 @@ body {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     background: linear-gradient(135deg, #FFD700, #FFA500);
     -webkit-background-clip: text;
@@ -115,7 +115,7 @@ body {
     font-size: 1.2rem;
     color: #cccccc;
     margin-bottom: 2rem;
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -159,7 +159,7 @@ body {
     border-radius: 2px;
 }
 
-/* Projects Section */
+/* Projects/Experience Section */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -203,12 +203,36 @@ body {
 .project-card h3 {
     color: #FFD700;
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.company-info {
+    color: #999999;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
+    font-style: italic;
 }
 
 .project-card p {
     color: #cccccc;
     margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    background: rgba(255, 215, 0, 0.1);
+    color: #FFD700;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
 /* About Section */
@@ -218,27 +242,65 @@ body {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
-    align-items: center;
+    align-items: start;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    background: linear-gradient(135deg, #111111, #1a1a1a);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    border-color: #FFD700;
+    transform: translateX(5px);
+}
+
+.skill-item h4 {
+    color: #FFD700;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.skill-item p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .about-text p {
     color: #cccccc;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
 /* Contact Section */
 .contact-content {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
+.contact-content > p {
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -266,6 +328,7 @@ body {
     color: #cccccc;
     text-decoration: none;
     transition: color 0.3s ease;
+    word-break: break-word;
 }
 
 .contact-item a:hover {
@@ -290,8 +353,18 @@ body {
         font-size: 2.5rem;
     }
 
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
     .nav-links {
-        display: none;
+        gap: 1rem;
+        font-size: 0.9rem;
     }
 
     .about-content {
@@ -299,12 +372,24 @@ body {
         text-align: center;
     }
 
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
     .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
         grid-template-columns: 1fr;
     }
 
     .container {
         padding: 0 1rem;
+    }
+
+    .section {
+        padding: 3rem 0;
     }
 }
 
